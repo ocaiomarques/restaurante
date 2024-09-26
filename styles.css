@@ -1,41 +1,53 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
+    font-family: Arial, sans-serif;
+    background-image: url('comida.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+button {
     background-color: #ff6347;
     color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 20px;
-    margin: 20px;
-  }
-  
-  #menu, #about, #contact {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #ff4500;
+}
